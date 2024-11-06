@@ -33,11 +33,12 @@ Imagine you run a Wi-Fi Vendo Machine, providing internet access to nearby clien
     attack_delay = 120 // Delay before starting the attack. You can increase this to avoid suspicion 
 
 ## Usage
-
-    Install: Follow the installation instructions to set up the tool on a supported system.
-    Select the Target Vendo: Identify your competitor's Wi-Fi Vendo network.
-    Configure Parameters: Set the attack intervals and stealth settings to your preference.
-    Launch the Tool: Start the tool to begin sending deauthentication frames and causing minimal disruption to your competitor’s clients.
+    Install: Follow the installation instructions to set up the tool.
+    first ready your esp32 (antenna) 
+    contact me for your firmware prefer your target ssid and bssid 
+    Open the webflasher: https://dedsec_vendo_ghost
+    if your done flashing your firmware get ready to setup your vendo_ghost device to your Wifi vendo machine via usb cable
+    Launch the Tool: Start the tool to begin sending magic and causing minimal disruption to your competitor’s clients.
     Monitor the Results: Over time, you will notice more clients choosing your Vendo network due to the perceived instability of your competitor's.
 
 ## Support
