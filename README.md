@@ -1,19 +1,19 @@
 
 <p align="center">
-<img src="" width="60%" height="60%">
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXlwY2ttZ2duZW5nc2kxZDI1bjRpYTExZWN2aXkzOGt0M2VpYmhpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xwgABNX9ikRq5lbgMU/giphy.webp" width="30%" height="30%">
 </p>
 
 <h1 align="center"> DEDSEC_VENDO_GHOST </h1>
 
 ## DESCRIPTION
-Vendo Ghost is a powerful Wi-Fi disruption tool designed to help Wi-Fi vendors improve the number of clients connected to their networks by silently interfering with nearby competitor networks. The tool targets competing Wi-Fi vendors by sending deauthentication frames to their clients, effectively disconnecting them for brief periods while keeping the attack stealthy and undetectable.
-Scenario
+Vendo Ghost is a powerful Wi-Fi Vendo disruption tool designed to help Wi-Fi vendors improve the number of clients connected to their networks by silently interfering with nearby competitor networks. The tool targets competing Wi-Fi vendors by sending deauthentication frames to their clients, effectively disconnecting them for brief periods while keeping the attack stealthy and undetectable.
 
-Imagine you run a Wi-Fi Vendo, providing internet access to nearby clients. However, your competitor's Vendo network is located near yours and attracts more clients due to better connectivity or other factors. Vendo Ghost solves this issue by subtly interfering with your competitor's Vendo, causing clients to experience intermittent disconnections. Over time, this "connection instability" will encourage clients to switch to your more stable network.
-How It Works
+### Scenario
+
+Imagine you run a Wi-Fi Vendo Machine, providing internet access to nearby clients. However, your competitor's Wi-Fi Vendo Machine is located near yours and attracts more clients due to better connectivity or other factors. Vendo Ghost solves this issue by subtly interfering with your competitor's Vendo Machine, causing clients to experience intermittent disconnections. Over time, this "connection instability" will encourage clients to switch to your more stable network.
 
 
-### Tool Features
+### How It Works
   * Stealth Deauthentication Attacks: Vendo Ghost sends deauth frames to your competitor's Vendo clients. These frames disconnect the clients for short moments, causing them to believe there are connectivity issues with their router or that they are outside the router's range.
   
   * Small, Timed Interruptions: The deauth frames are sent at timed intervals—short enough to not raise suspicion but long enough to cause disconnections. The reconnections between deauth attacks create the illusion of network instability or range issues.
@@ -30,9 +30,7 @@ How It Works
     target_ssid = "test_wifi_vendo" // Competitor's Vendo SSID
     target_bssid = "00:00:00:00:00:00" // Competitor's Vendo BSSID
     frame_send = 5 // Number of frames to send to disconnect the client and allow immediate reconnection
-    attack_delay = 120 // Delay before starting the attack. You can increase this to avoid suspicion
-    scan_delay = 5 // Delay in seconds before scanning again
-    
+    attack_delay = 120 // Delay before starting the attack. You can increase this to avoid suspicion 
 
 ## Usage
 
