@@ -32,6 +32,21 @@ Imagine you run a Wi-Fi Vendo Machine, providing internet access to nearby clien
     frame_send = 5 // Number of frames to send to disconnect the client and allow immediate reconnection
     attack_delay = 120 // Delay before starting the attack. You can increase this to avoid suspicion 
 
+
+## Support hardware (XIAO ESP32 C3)
+<p align="center">
+<img src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/XIAO_ESP32S3_01.png" width="30%" height="30%">
+<img src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/XIAO_ESP32S3_SEN_04.png" width="30%" height="30%">
+</p>
+<p align="center">
+ <img src="https://github.com/user-attachments/assets/79661c9d-84b3-4dd4-b767-56166cdca5b9" width="50%" height="50%">
+</p>
+
+## Support hardware (ESP32 Dev Kit V1)
+<p align="center">
+<img src="https://freesvg.org/img/1666364456Esp32_devkitc_v4.png" width="30%" height="30%">
+</p>
+
 ## Usage
     Install: Follow the installation instructions to set up the tool.
     first ready your esp32 (antenna) 
