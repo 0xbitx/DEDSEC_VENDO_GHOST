@@ -1,6 +1,6 @@
 
 <p align="center">
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXlwY2ttZ2duZW5nc2kxZDI1bjRpYTExZWN2aXkzOGt0M2VpYmhpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xwgABNX9ikRq5lbgMU/giphy.webp" width="30%" height="30%">
+<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczk4MjBtZ2g1djdvemZ2dnpob3I3NXQxMmk2ZGxreDMxbm91M2FveiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9b7RA8UZj2Quad47m0/giphy.webp" width="30%" height="30%">
 </p>
 
 <h1 align="center"> DEDSEC_VENDO_GHOST </h1>
