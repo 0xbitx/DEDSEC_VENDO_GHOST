@@ -13,7 +13,7 @@ Vendo Ghost is a powerful Wi-Fi Vendo disruption tool designed to help Wi-Fi ven
 Imagine you run a Wi-Fi Vendo Machine, providing internet access to nearby clients. However, your competitor's Wi-Fi Vendo Machine is located near yours and attracts more clients due to better connectivity or other factors. Vendo Ghost solves this issue by subtly interfering with your competitor's Vendo Machine, causing clients to experience intermittent disconnections. Over time, this "connection instability" will encourage clients to switch to your more stable network.
 
 
-### Feautures
+### Features
   * Stealth Deauthentication Attacks: Vendo Ghost sends deauth frames to your competitor's Vendo clients. These frames disconnect the clients for short moments, causing them to believe there are connectivity issues with their router or that they are outside the router's range.
   
   * Small, Timed Interruptions: The deauth frames are sent at timed intervals—short enough to not raise suspicion but long enough to cause disconnections. The reconnections between deauth attacks create the illusion of network instability or range issues.
@@ -28,6 +28,8 @@ Imagine you run a Wi-Fi Vendo Machine, providing internet access to nearby clien
   
   * Randomized Delay for Stealth Attack Pattern:
 To prevent detection and make the deauthentication attacks appear as natural connectivity issues, Vendo Ghost implements a randomized delay between deauth frame bursts. This delay feature causes interruptions at varied intervals, reducing the likelihood of establishing a predictable pattern that could trigger alarms or prompt investigation.
+  
+  * Client Discovery: This feature scans the target network to detect and count all connected client devices before launching any attacks. The tool initiates attacks only if it meets the specified client count, preventing unnecessary actions on underutilized networks and optimizing resource usage. This approach ensures that attacks remain stealthy and effective.
 
 ### Variables need to setup 
     target_ssid = "test_wifi_vendo" // Competitor's Vendo SSID
