@@ -25,13 +25,18 @@ Imagine you run a Wi-Fi Vendo Machine, providing internet access to nearby clien
   * Compact and Stealthy ESP32 Implementation: Vendo Ghost operates on a small ESP32 device, which can be discreetly installed inside your Wi-Fi Vendo hardware. The ESP32 allows the tool to run autonomously and stealthily, without requiring an additional computer or device, and ensures that the operation remains covert, with minimal power consumption and a small form factor.
   
   * BSSID-Driven Attack Persistence: The tool requires the SSID and BSSID of the target Vendo. Even if the competitor changes the AP's SSID, the BSSID remains constant and allows the tool to continue the attack. As long as the target BSSID is active, Vendo Ghost will persistently send deauth frames, keeping the attack going until the competitor changes their AP entirely.
+  
+  * Randomized Delay for Stealth Attack Pattern:
+To prevent detection and make the deauthentication attacks appear as natural connectivity issues, Vendo Ghost implements a randomized delay between deauth frame bursts. This delay feature causes interruptions at varied intervals, reducing the likelihood of establishing a predictable pattern that could trigger alarms or prompt investigation.
 
 ### Variables need to setup 
     target_ssid = "test_wifi_vendo" // Competitor's Vendo SSID
     target_bssid = "00:00:00:00:00:00" // Competitor's Vendo BSSID
     frame_send = 5 // Number of frames to send to disconnect the client and allow immediate reconnection
     attack_delay = 120 // Delay before starting the attack. You can increase this to avoid suspicion 
-
+    DELAY_MODE // delay mode 0 for fixed delay value 1 for random delay {10, 20, 30, 40, 50}
+    DELAY_ATTACK_OPTIONS = {60, 120, 220, 330, 440} // set of random delay in seconds
+    CLIENT_DETECT = 0 // client on the network to detect to start the attack (0 false) 
 
 ## Support hardware (XIAO ESP32 C3)
 <p align="center">
@@ -49,9 +54,10 @@ Imagine you run a Wi-Fi Vendo Machine, providing internet access to nearby clien
 
 ## Usage
     Install: Follow the installation instructions to set up the tool.
-    first ready your esp32 (antenna) 
-    contact me for your firmware prefer your target ssid and bssid 
-    Open the webflasher: https://dedsec_vendo_ghost
+    1. first ready your esp32 module (antenna) optional depends target range 
+    2. contact me for your firmware prefer your target ssid and bssid 
+    3. Open the webflasher: https://dedsec_vendo_ghost
+    
     if your done flashing your firmware get ready to setup your vendo_ghost device to your Wifi vendo machine via usb cable
     Launch the Tool: Start the tool to begin sending magic and causing minimal disruption to your competitor’s clients.
     Monitor the Results: Over time, you will notice more clients choosing your Vendo network due to the perceived instability of your competitor's.
