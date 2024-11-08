@@ -57,11 +57,11 @@ To prevent detection and make the deauthentication attacks appear as natural con
 ## Usage
     Install: Follow the installation instructions to set up the tool.
     1. first ready your esp32 module (antenna) optional depends target range 
-    2. contact me for your firmware prefer your target ssid and bssid 
-    3. Open the webflasher: https://dedsec_vendo_ghost
+    2. contact me for your target ssid and bssid 
+    3. im going to build your custom firmware and send custom webflasher
     
     if your done flashing your firmware get ready to setup your vendo_ghost device to your Wifi vendo machine via usb cable
-    Launch the Tool: Start the tool to begin sending magic and causing minimal disruption to your competitor’s clients.
+    and the tool to begin sending magic and causing minimal disruption to your competitor’s clients.
     Monitor the Results: Over time, you will notice more clients choosing your Vendo network due to the perceived instability of your competitor's.
 
 ## Support
