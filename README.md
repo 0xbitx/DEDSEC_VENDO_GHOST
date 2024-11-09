@@ -31,7 +31,7 @@ To prevent detection and make the deauthentication attacks appear as natural con
   
   * Client Discovery: This feature scans the target network to detect and count all connected client devices before launching any attacks. The tool initiates attacks only if it meets the specified client count, preventing unnecessary actions on underutilized networks and optimizing resource usage. This approach ensures that attacks remain stealthy and effective.
 
-### Variables need to setup 
+### Variables feature need to setup 
     target_ssid = "test_wifi_vendo" // Competitor's Vendo SSID
     target_bssid = "00:00:00:00:00:00" // Competitor's Vendo BSSID
     frame_send = 5 // Number of frames to send to disconnect the client and allow immediate reconnection
@@ -55,11 +55,12 @@ To prevent detection and make the deauthentication attacks appear as natural con
 </p>
 
 ## Usage
-    Install: Follow the installation instructions to set up the tool.
-    1. first ready your esp32 module (antenna) optional depends target range 
-    2. contact me for your target ssid and bssid 
-    3. im going to build your custom firmware and send custom webflasher
-    
+    Installation: 
+
+    1. First, prepare your ESP32 module (an antenna is optional, depending on the target range).
+    2. Contact me on Discord (make sure your ESP32 is ready) before reaching out.
+    3. will build your custom firmware and send you the custom flasher.
+
     if your done flashing your firmware get ready to setup your vendo_ghost device to your Wifi vendo machine via usb cable
     and the tool to begin sending magic and causing minimal disruption to your competitor’s clients.
     Monitor the Results: Over time, you will notice more clients choosing your Vendo network due to the perceived instability of your competitor's.
