@@ -40,7 +40,7 @@ To prevent detection and make the deauthentication attacks appear as natural con
     DELAY_ATTACK_OPTIONS = {60, 120, 220, 330, 440} // set of random delay in seconds
     CLIENT_DETECT = 0 // client on the network to detect to start the attack (0 false) 
 
-## Support hardware (XIAO ESP32 S3)
+## Support hardware (XIAO ESP32 S3) under testing
 <p align="center">
 <img src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/XIAO_ESP32S3_01.png" width="30%" height="30%">
 <img src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/XIAO_ESP32S3_SEN_04.png" width="30%" height="30%">
@@ -49,7 +49,7 @@ To prevent detection and make the deauthentication attacks appear as natural con
  <img src="https://github.com/user-attachments/assets/79661c9d-84b3-4dd4-b767-56166cdca5b9" width="50%" height="50%">
 </p>
 
-## Support hardware (ESP32 Dev Kit V1)
+## Support hardware (ESP32 Dev Kit V1) working
 <p align="center">
 <img src="https://freesvg.org/img/1666364456Esp32_devkitc_v4.png" width="30%" height="30%">
 </p>
