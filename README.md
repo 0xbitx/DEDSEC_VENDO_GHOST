@@ -29,7 +29,7 @@ Imagine you run a Wi-Fi Vendo Machine, providing internet access to nearby clien
   * Randomized Delay for Stealth Attack Pattern:
 To prevent detection and make the deauthentication attacks appear as natural connectivity issues, Vendo Ghost implements a randomized delay between deauth frame bursts. This delay feature causes interruptions at varied intervals, reducing the likelihood of establishing a predictable pattern that could trigger alarms or prompt investigation.
   
-  * Client Discovery: This feature scans the target network to detect and count all connected client devices before launching any attacks. The tool initiates attacks only if it meets the specified client count, preventing unnecessary actions on underutilized networks and optimizing resource usage. This approach ensures that attacks remain stealthy and effective.
+  * Client Discovery: This feature scans the target network to detect if have client connected before launching any attacks. The tool initiates attacks only if client found, preventing unnecessary actions on underutilized networks and optimizing resource usage. This approach ensures that attacks remain stealthy and effective.
 
 ### Variables feature need to setup 
     target_ssid = "test_wifi_vendo" // Competitor's Vendo SSID
@@ -38,7 +38,6 @@ To prevent detection and make the deauthentication attacks appear as natural con
     attack_delay = 120 // Delay before starting the attack. You can increase this to avoid suspicion 
     DELAY_MODE // delay mode 0 for fixed delay value 1 for random delay {10, 20, 30, 40, 50}
     DELAY_ATTACK_OPTIONS = {60, 120, 220, 330, 440} // set of random delay in seconds
-    CLIENT_DETECT = 0 // client on the network to detect to start the attack (0 false) 
 
 ## Support hardware (XIAO ESP32 S3) (XIAO ESP32 C3) working
 <p align="center">
