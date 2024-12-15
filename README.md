@@ -64,6 +64,13 @@ To prevent detection and make the deauthentication attacks appear as natural con
     and the tool to begin sending magic and causing minimal disruption to your competitor’s clients.
     Monitor the Results: Over time, you will notice more clients choosing your Vendo network due to the perceived instability of your competitor's.
 
+## feature list:
+- [x] stealth mode
+- [x] 2.4Ghz support
+- [x] Change ssid detection
+- [x] esp32 s3/c3 support
+- [ ] 5 Ghz support
+      
 ## Support
 
 If you find my work helpful and want to support me, consider making a donation. Your contribution will help me continue working on open-source projects.
