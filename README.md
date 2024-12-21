@@ -53,7 +53,7 @@ To prevent detection and make the deauthentication attacks appear as natural con
 <img src="https://freesvg.org/img/1666364456Esp32_devkitc_v4.png" width="30%" height="30%">
 </p>
 
-## Support hardware (RTL8720DN BW16) comming soon
+## Support hardware (RTL8720DN BW16) coming soon
 <p align="center">
 <img src="https://github.com/user-attachments/assets/f10fee55-3f3f-46b6-a0ca-87005f0bb052" width="30%" height="30%">
 </p>
