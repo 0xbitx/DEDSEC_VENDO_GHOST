@@ -45,7 +45,7 @@ To prevent detection and make the deauthentication attacks appear as natural con
 <img src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/XIAO_ESP32S3_SEN_04.png" width="23%" height="23%">
 </p>
 <p align="center">
- <img src="https://github.com/user-attachments/assets/79661c9d-84b3-4dd4-b767-56166cdca5b9" width="50%" height="50%">
+ <img src="https://github.com/user-attachments/assets/dfd9a538-f70a-4e06-9d53-f47546a33ce0" width="50%" height="50%">
 </p>
 
 ## Support hardware (ESP32 Dev Kit V1) working
