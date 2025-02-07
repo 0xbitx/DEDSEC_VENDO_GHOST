@@ -31,14 +31,29 @@ To prevent detection and make the deauthentication attacks appear as natural con
   
   * Client Discovery: This feature scans the target network to detect if have client connected before launching any attacks. The tool initiates attacks only if client found, preventing unnecessary actions on underutilized networks and optimizing resource usage. This approach ensures that attacks remain stealthy and effective.
 
-### Variables feature need to setup 
-    target_ssid = "test_wifi_vendo" // Competitor's Vendo SSID
-    target_bssid = "00:00:00:00:00:00" // Competitor's Vendo BSSID
-    frame_send = 5 // Number of frames to send to disconnect the client and allow immediate reconnection
-    attack_delay = 120 // Delay before starting the attack. You can increase this to avoid suspicion 
-    DELAY_MODE // delay mode 0 for fixed delay value 1 for random delay {10, 20, 30, 40, 50}
-    DELAY_ATTACK_OPTIONS = {60, 120, 220, 330, 440} // set of random delay in seconds
+  * SSID Unique Name Filtering: This feature ensures that Vendo Ghost continues attacking the competitor's Wi-Fi even if they change their SSID.
+    Instead of relying only on exact SSID matches, the system detects a predefined unique identifier in the SSID, combined with keywords like "vendo", "wifi", "machine", or "piso".
+    How It Works:
+    You define a unique name for your competitor, such as "Razor".
+    If the competitor changes their SSID but keeps the unique name, the attack will still detect and target their network.
+    The attack is triggered only if the SSID contains both the unique name AND a keyword from the predefined list.
 
+        Example of Detected SSIDs:
+    
+        If competitor's unique name is "Razor", the following SSIDs will be detected as targets:
+    
+        vendo Razor → Detected (Contains "Razor" + "vendo")
+        Razor wifi → Detected (Contains "Razor" + "wifi")
+        Razor vendo → Detected (Contains "Razor" + "vendo")
+        Razor vendo Machine → Detected (Contains "Razor" + "vendo", "machine")
+        Razor Piso wifi → Detected (Contains "Razor" + "piso", "wifi")
+        Razor Piso wifi machine → Detected (Contains "Razor" + "piso", "wifi", "machine")
+        Fast Razor vendo machine → Detected (Contains "Razor" + "vendo", "machine")
+
+   * Advanced Kill Switch Feature: A customizable list of "Kill Switch" SSIDs is used to prevent attacks when specific networks are detected nearby.
+   If a Kill Switch SSID is found, all attacks are immediately paused, and the device will delay the next scan based on a configurable kill switch delay setting.
+   This prevents unwanted disruptions and ensures stealthy operation by avoiding detection in specific situations.
+    
 ## Support hardware (XIAO ESP32 S3) (XIAO ESP32 C3) working
 <p align="center">
 <img src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/XIAO_ESP32S3_01.png" width="23%" height="23%">
