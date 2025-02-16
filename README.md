@@ -54,7 +54,7 @@ To prevent detection and make the deauthentication attacks appear as natural con
    If a Kill Switch SSID is found, all attacks are immediately paused, and the device will delay the next scan based on a configurable kill switch delay setting.
    This prevents unwanted disruptions and ensures stealthy operation by avoiding detection in specific situations.
     
-## Support hardware (XIAO ESP32 S3) (XIAO ESP32 C3) working
+## Support hardware (XIAO ESP32 S3) (XIAO ESP32 C3) (ESP32-C3 Super Mini) working
 <p align="center">
 <img src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/XIAO_ESP32S3_01.png" width="23%" height="23%">
 <img src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/XIAO_ESP32S3_SEN_04.png" width="23%" height="23%">
